@@ -1,6 +1,7 @@
 <?php
 
-  trait Indirizzo {
+  trait Indirizzo
+  {
     private $stato;
     private $citta;
     private $via;

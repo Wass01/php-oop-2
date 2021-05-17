@@ -3,6 +3,8 @@
   require_once './indirizzo.php';
 
   class Utente {
+    use Indirizzo;
+    
     private $nome;
     private $cognome;
     private $data_nascita;

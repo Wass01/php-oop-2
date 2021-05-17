@@ -1,5 +1,5 @@
 <?php
-  require_once './partials/utente.php';
+  require_once './utente.php';
 
   $utente = new Utente('Wassim', 'Maatalla', '06/03/2001', 'Italia', 'Milano', 'via Roma 12', '22202');
 
