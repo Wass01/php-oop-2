@@ -1,13 +1,14 @@
 <?php
 
-  require_once './indirizzo.php';
+  require_once 'indirizzo.php';
 
   class Utente {
     use Indirizzo;
-    
+
     private $nome;
     private $cognome;
     private $data_nascita;
+    private $prodotti = [];
 
     public function __construct($nome, $cognome, $data_nascita, $stato, $citta, $via, $cap) {
     $this->nome = $nome;
@@ -47,5 +48,14 @@
     public function getDataNascita()
     {
       return $this->data_nascita;
+    }
+
+    public function insertProdotto($prodotto)
+    {
+      $this->prodotti[] = $prodotto;
+    }
+    public function getProdotti()
+    {
+      return $this->prodotti;
     }
 }
