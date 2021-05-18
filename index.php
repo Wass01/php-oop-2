@@ -7,8 +7,8 @@
   $felpa = new Prodotto('felpa nike', 'Abbigliamento', 'disponibile', 59.90, '02/06/2020', 'UK');
 
   var_dump($utente);
-  var_dump($prodotto1);
-  var_dump($prodotto2);
+  var_dump($quadro);
+  var_dump($felpa);
 
 
 ?>
