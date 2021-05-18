@@ -2,10 +2,10 @@
 
   trait Indirizzo
   {
-    private $stato;
-    private $citta;
-    private $via;
-    private $cap;
+    protected $stato;
+    protected $citta;
+    protected $via;
+    protected $cap;
 
     // set && get stato
     public function setStato($stato)
