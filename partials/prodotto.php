@@ -1,22 +1,20 @@
 <?php
 
   class Prodotto {
-    public $nome_prod;
-    public $categoria;
-    public $disponibilita;
-    public $prezzo;
-    public $data_uscita;
-    public $provenienza;
-    public $taglia;
+    private $nome_prod;
+    private $categoria;
+    private $disponibilita;
+    private $prezzo;
+    private $data_uscita;
+    private $provenienza;
 
-    public function __construct($nome_prod, $categoria, $disponibilita, $prezzo, $data_uscita, $provenienza, $taglia) {
+    public function __construct($nome_prod, $categoria, $disponibilita, $prezzo, $data_uscita, $provenienza) {
       $this->nome_prod = $nome_prod;
       $this->categoria = $categoria;
       $this->disponibilita = $disponibilita;
       $this->prezzo = $prezzo;
       $this->data_uscita = $data_uscita;
       $this->provenienza = $provenienza;
-      $this->taglia = $taglia;
     }
 
     // set && get nome
@@ -77,15 +75,5 @@
     public function getProvenienza()
     {
       return $this->provenienza;
-    }
-
-    // set && get taglia
-    public function setTaglia($taglia)
-    {
-      $this->taglia = $taglia;
-    }
-    public function getTaglia()
-    {
-      return $this->taglia;
     }
   }
